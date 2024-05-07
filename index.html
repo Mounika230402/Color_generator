@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Welcome Color Genrator</h1>
+        <h3>Let's play with Colors</h3>
+        <button id="btn">CLICK</button>
+    </div>
+    <script>
+        let div=document.getElementsByClassName("main")[0];
+        div.setAttribute("style","text-align:center;font-size:150%")
+        let getBtn=document.getElementById("btn");
+        function colorGenerates(){
+        let str="0123456789ABCDEF"
+        let res="#"
+        for(i=0;i<6;i++){
+            res+=str[Math.floor(Math.random()*10)]
+        }
+        return res;
+    }
+    console.log(colorGenerates())
+    getBtn.addEventListener("click",()=>{
+        document.body.style.backgroundColor=colorGenerates();
+    });
+    </script>
+</body>
+</html>
