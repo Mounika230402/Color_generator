@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <style>
+        div{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+    </style> -->
 </head>
 <body>
     <div class="main">
@@ -12,10 +17,11 @@
         <button id="btn">CLICK</button>
     </div>
     <script>
+        document.body.style.fontFamily="'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
         let div=document.getElementsByClassName("main")[0];
         div.setAttribute("style","text-align:center;font-size:150%;color:white;margin-top:20%")
         let getBtn=document.getElementById("btn");
-        getBtn.setAttribute("style","color:white;background-color:lightblue;border:0;font-size:100%")
+        getBtn.setAttribute("style","color:white;background-color:lightblue;border:0;font-size:100%;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif")
         document.body.style.backgroundColor="green";
         function colorGenerates(){
         let str="0123456789ABCDEF"
